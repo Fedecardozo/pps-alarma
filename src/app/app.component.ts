@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+import { SplashScreen } from '@capacitor/splash-screen';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +10,12 @@ import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
   imports: [IonApp, IonRouterOutlet],
 })
 export class AppComponent {
-  constructor() {}
+  public router: Router = inject(Router);
+
+  constructor() {
+    this.router.navigateByUrl('splash');
+  }
+  ionViewDitEnter() {
+    SplashScreen.hide();
+  }
 }
