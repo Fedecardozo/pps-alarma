@@ -1,5 +1,4 @@
 .padre {
-  background-color: #83a5ab;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -45,4 +44,21 @@
 h2 {
   font-weight: 900;
   font-size: 2rem;
+  font-size: 36px;
+  animation: desplazar 3s both;
+}
+
+@keyframes desplazar {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }

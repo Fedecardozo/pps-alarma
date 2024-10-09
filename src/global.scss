@@ -38,6 +38,13 @@
 
 body {
   font-family: Roboto, sans-serif;
+  background: rgb(21, 19, 63);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 19, 63, 1) 0%,
+    rgba(2, 2, 2, 1) 100%,
+    rgba(144, 142, 149, 1) 100%
+  );
 }
 
 .mb-3 {

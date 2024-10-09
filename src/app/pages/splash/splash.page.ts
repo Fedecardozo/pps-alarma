@@ -29,7 +29,7 @@ export class SplashPage implements OnInit {
   constructor() {
     setTimeout(() => {
       this.router.navigateByUrl('/home');
-    }, 2500);
+    }, 5000);
   }
   ngOnInit() {}
 }
