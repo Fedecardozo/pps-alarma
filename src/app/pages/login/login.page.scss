@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+#form {
+  place-items: center;
+  height: 50%;
+  padding: 25px;
+  background-color: #161616;
+  box-shadow: 0px 15px 60px #00ff7f;
+  outline: 1px solid #2b9962;
+  border-radius: 10px;
+}
+
+#welcome-lines {
+  text-align: center;
+  line-height: 1;
+}
+
+#welcome-line-1 {
+  color: #00ff7f;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#welcome-line-2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 17px;
+}
+
+.form-inp {
+  padding: 11px 25px;
+  background: transparent;
+  border: 1px solid #e3e3e3;
+  line-height: 1;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.form-inp:focus {
+  border: 1px solid #00ff7f;
+}
+
+.form-inp:first-child {
+  margin-bottom: 15px;
+}
+
+.form-inp input {
+  width: 100%;
+  background: none;
+  font-size: 13.4px;
+  color: #00ff7f;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-inp input:focus {
+  outline: none;
+}
+
+#submit-button-cvr {
+  margin-top: 20px;
+}
+
+#submit-button {
+  display: block;
+  width: 100%;
+  color: #00ff7f;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 14px 13px 12px 13px;
+  border: 0;
+  outline: 1px solid #00ff7f;
+  border-radius: 8px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
