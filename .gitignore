@@ -70,3 +70,7 @@ testem.log
 Thumbs.db
 
 resources/android/**/*
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json

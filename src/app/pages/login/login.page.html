@@ -1,20 +1,56 @@
 <div class="container">
-  <form id="form">
-    <div class="mb-3">
-      <div id="welcome-lines">
+  <form [formGroup]="fg" id="form">
+    <div class="justify-center">
+      <img src="assets/logo.png" alt="icono" class="img-icon" />
+    </div>
+    <div>
+      <div id="welcome-lines" class="mb-3">
         <div id="welcome-line-1">Alarma</div>
         <div id="welcome-line-2">Bienvenido, alarma de robo</div>
       </div>
-      <div class="mb-3">
+      <div class="acceso-rapido">
+        <button class="btn-green" (click)="cargaUsuario(usuarios[0])">
+          Fede
+        </button>
+        <button class="btn-green" (click)="cargaUsuario(usuarios[1])">
+          Luna
+        </button>
+        <button class="btn-green" (click)="cargaUsuario(usuarios[2])">
+          Clari
+        </button>
+      </div>
+      <div>
         <div class="form-inp">
-          <input placeholder="Correo" type="text" />
+          <input placeholder="Correo" type="text" formControlName="correo" />
+        </div>
+        <div class="cont-p">
+          @if(this.fg.controls['correo'].errors !== null &&
+          this.fg.controls["correo"].touched) { @if
+          (this.fg.controls['correo'].errors!['required']) {
+          <p>El campo esta vacio</p>
+          } @else if (this.fg.controls['correo'].errors!['email']) {
+          <p>No es un correo valido</p>
+          } }
         </div>
         <div class="form-inp">
-          <input placeholder="Constraseña" type="password" />
+          <input
+            placeholder="Constraseña"
+            type="password"
+            formControlName="clave"
+          />
+        </div>
+        <div class="cont-p">
+          @if(this.fg.controls['clave'].errors !== null &&
+          this.fg.controls["clave"].touched) { @if
+          (this.fg.controls['clave'].errors!['required']) {
+          <p>El campo esta vacio</p>
+          } }
         </div>
       </div>
       <div>
-        <button id="submit-button" type="submit">Acceder</button>
+        <button id="submit-button" type="submit" (click)="acceder()">
+          Acceder
+        </button>
       </div>
     </div>
   </form>

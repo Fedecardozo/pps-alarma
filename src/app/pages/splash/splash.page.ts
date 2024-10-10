@@ -8,6 +8,7 @@ import {
   IonToolbar,
 } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
+import { UsersService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-splash',
@@ -25,9 +26,11 @@ import { Router } from '@angular/router';
 })
 export class SplashPage implements OnInit {
   public router: Router = inject(Router);
+  authService: UsersService = inject(UsersService);
 
   constructor() {
     setTimeout(() => {
+      this.authService.splash = true;
       this.router.navigateByUrl('/login');
     }, 5000);
   }

@@ -1,3 +1,8 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-router-outlet></ion-router-outlet>
+@if(this.auth.correo && this.auth.splash) {
+<header>
+  <ion-button color="danger" (click)="cerrarSesion()">
+    Cerrar sesión
+  </ion-button>
+</header>
+}
