@@ -14,11 +14,11 @@ export class UsersService {
   private unSuscribe?: Unsubscribe;
   correo: string | null | undefined = undefined;
   splash: boolean = false;
+  clave: string = '123456';
 
   constructor() {
     this.unSuscribe = this.auth.onAuthStateChanged((auth) => {
       if (auth?.email) {
-        console.log(auth.email);
         this.correo = this.auth.currentUser?.email;
       } else {
         this.correo = null;

@@ -73,6 +73,7 @@ export class LoginPage implements OnInit {
           this.fg.controls['clave'].value
         )
         .then(() => {
+          this.userService.clave = this.fg.controls['clave'].value;
           this.router.navigateByUrl('/home');
         })
         .catch(() => {

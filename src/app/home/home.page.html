@@ -1,11 +1,21 @@
+<ion-fab vertical="top" horizontal="end">
+  <ion-fab-button (click)="cerrarSesion()" color="light">
+    <i
+      class="fa-solid fa-arrow-right-from-bracket fa-lg"
+      style="color: #fc0303"
+    ></i>
+  </ion-fab-button>
+</ion-fab>
 <main>
   @if (this.activar) {
-  <ion-button expand="block" color="danger" (click)="activarDesactivar()">
-    Activar
+  <ion-button expand="block" color="primary" (click)="activarDesactivar()">
+    Desactivado &nbsp;
+    <i class="fa-solid fa-lock-open fa-xl"></i>
   </ion-button>
   } @else {
-  <ion-button expand="block" color="success" (click)="activarDesactivar()">
-    Desactivar
+  <ion-button expand="block" color="secondary" (click)="activarDesactivar()">
+    Activado &nbsp;
+    <i class="fa-solid fa-lock fa-xl"></i>
   </ion-button>
   }
 </main>

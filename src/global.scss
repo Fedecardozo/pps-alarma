@@ -63,3 +63,37 @@ body {
 .mb-1 {
   margin-bottom: 1rem;
 }
+
+.custom-swal-popup {
+  background: radial-gradient(
+    125% 125% at 50% 10%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 255, 127, 0.5) 100%
+  );
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.3); /* Sombra suave */
+}
+
+.custom-confirm-button {
+  background-color: rgb(0, 76, 38); /* Verde que combine con tu fondo */
+  color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.custom-cancel-button {
+  background-color: rgba(137, 21, 35, 0.8); /* Verde que combine con tu fondo */
+  color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.custom-cancel-button:hover {
+  background-color: rgba(255, 0, 127, 1); /* Color más intenso en hover */
+}
+
+.custom-confirm-button:hover {
+  background-color: rgba(0, 255, 127, 1); /* Color más intenso en hover */
+}
