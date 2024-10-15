@@ -145,7 +145,14 @@ export class HomePage {
   }
 
   async cerrarSesion() {
-    await this.user.cerrarSesion();
-    this.router.navigateByUrl('/login');
+    if (this.activar) {
+      await this.user.cerrarSesion();
+      this.router.navigateByUrl('/login');
+    } else {
+      Alert.error(
+        'No puede cerrar sesión',
+        'para cerrar sesión tiene que desactivar la alarma'
+      );
+    }
   }
 }
