@@ -59,6 +59,7 @@ export class HomePage {
           if (res.value === this.user.clave) {
             this.desactivar();
           } else {
+            this.activar = !this.activar;
             this.final();
           }
         }
@@ -137,9 +138,10 @@ export class HomePage {
     this.reproducir('horizontal');
   }
 
-  desactivar() {
+  async desactivar() {
     if (this.sonidoActual) this.sonidoActual.pause();
-    Motion.removeAllListeners();
+    await Motion.removeAllListeners();
+    await CapacitorFlash.switchOff();
   }
 
   async cerrarSesion() {
