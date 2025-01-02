@@ -9,30 +9,30 @@ Para desactivar la alarma se pedirá el ingreso de una contraseña que deberá c
 ## Inicio de sesión
 
 <p align="center">
- <img width="450" src="https://github.com/user-attachments/assets/734e884c-eb87-40cc-960e-93bfe6f3c504">
+ <img width="900" src="https://github.com/user-attachments/assets/734e884c-eb87-40cc-960e-93bfe6f3c504">
 </p>
 
 ## Desactivado
 
 <p align="center">
- <img width="450" src="https://github.com/user-attachments/assets/39579eee-50cd-4c83-a328-6ac5b5a70f08">
+ <img width="900" src="https://github.com/user-attachments/assets/39579eee-50cd-4c83-a328-6ac5b5a70f08">
 </p>
 
 ## Activado
 
 <p align="center">
- <img width="450" src="https://github.com/user-attachments/assets/612e1504-83b8-4bd3-85b1-741fbacb7ca1">
+ <img width="900" src="https://github.com/user-attachments/assets/612e1504-83b8-4bd3-85b1-741fbacb7ca1">
 </p>
 
 ## Desactivar
 
 <p align="center">
- <img width="450" src="https://github.com/user-attachments/assets/71be71e3-b45f-4a9d-a28b-68a460ba6bbc">
+ <img width="900" src="https://github.com/user-attachments/assets/71be71e3-b45f-4a9d-a28b-68a460ba6bbc">
 </p>
 
 ## Intento de cerrar sesión
 
 <p align="center">
- <img width="450" src="https://github.com/user-attachments/assets/e1fa922d-82d2-4e61-b9e2-b528642a8f1f">
+ <img width="900" src="https://github.com/user-attachments/assets/e1fa922d-82d2-4e61-b9e2-b528642a8f1f">
 </p>
 
