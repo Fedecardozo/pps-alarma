@@ -9,7 +9,7 @@ Para desactivar la alarma se pedirá el ingreso de una contraseña que deberá c
 ## Inicio de sesión
 
 <p align="center">
- <img width="900" src="https://github.com/user-attachments/assets/734e884c-eb87-40cc-960e-93bfe6f3c504">
+ <img width="450" src="https://github.com/user-attachments/assets/734e884c-eb87-40cc-960e-93bfe6f3c504">
 </p>
 
 ## Desactivado
